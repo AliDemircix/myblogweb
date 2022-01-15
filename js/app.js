@@ -1,10 +1,13 @@
-import categories from './components/data/categories.js';
 import { topContainerWrapper } from './components/view/topContainer.js';
 import { headerWrapper } from './components/view/header.js';
 import { newPostsWrapper } from './components/view/newPosts.js';
 import { likedPostsWrapper } from './components/view/mostLikedPosts.js';
+import { newsWrapper } from './components/view/news.js';
+import { footer } from './components/view/footer.js';
 const myMobile = document.querySelector('.mobile');
 myMobile.appendChild(headerWrapper);
 myMobile.appendChild(topContainerWrapper);
 myMobile.appendChild(newPostsWrapper);
 myMobile.appendChild(likedPostsWrapper);
+myMobile.appendChild(newsWrapper);
+myMobile.appendChild(footer);
