@@ -41,5 +41,12 @@ const categories = [
     icon: '<i class="far fa-comments mr-1 text-warning"></i>',
     className: 'text-warning',
   },
+  {
+    id: 7,
+    title: 'next.js',
+    url: 'next',
+    icon: '<i class="far fa-comments mr-1 text-warning"></i>',
+    className: 'text-info',
+  },
 ];
 export default categories;

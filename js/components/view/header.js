@@ -43,4 +43,4 @@ categories.forEach((category) => {
 rowCatWrapper.appendChild(rowCatText);
 headerWrapper.appendChild(rowCatWrapper);
 
-export { headerWrapper, headerWrapperRow };
+export { headerWrapper };

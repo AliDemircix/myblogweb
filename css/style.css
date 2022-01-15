@@ -101,7 +101,7 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   color: black;
 }
 .header .cattext > h6 a:hover {
-  color: red;
+  color: tomato;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
@@ -198,6 +198,10 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
 }
 .postarea .textpro > i {
   font-size: 13px;
+}
+.textpro p {
+  max-height: 120px;
+  overflow: hidden;
 }
 
 .card-body i {

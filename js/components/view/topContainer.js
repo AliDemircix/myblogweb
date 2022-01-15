@@ -22,7 +22,7 @@ rightSliderWrapper.className =
   'col-lg-3 col-md-4 col-sm-12 ml-auto rightslider';
 posts.forEach((post) => {
   if (post.isPinned) {
-    rightSliderWrapper.innerHTML += ` <div class="col-lg-12 col-md-12 col-sm-12 righttop mb-4 "> <a href=""> <img class="img-fluid shadow-sm" src="${post.img}"> <p style="position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);color:white; background-color:#f4b24077; padding:3px;  " class="text-center">${post.title} </p></a></div>`;
+    rightSliderWrapper.innerHTML += ` <div class="col-lg-12 col-md-12 col-sm-12 righttop mb-4 "> <a href=""> <img class="img-fluid shadow-sm" src="${post.img}"> <p style="position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);color:white; background-color:rgba(255, 99, 71, 0.562); padding:3px;  " class="text-center">${post.title} </p></a></div>`;
   }
 });
 sliderRow.appendChild(leftSliderWrapper);
