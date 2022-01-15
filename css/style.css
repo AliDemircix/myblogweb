@@ -82,6 +82,9 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   color: white;
   text-transform: capitalize;
 }
+.header .menu > li .dropdown-menu > a {
+  text-transform: uppercase;
+}
 
 .cattext {
   text-align: center !important;

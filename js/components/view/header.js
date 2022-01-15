@@ -9,7 +9,7 @@ headerWrapper.className = 'container header shadow-sm tomato-progress';
 headerWrapperRow.className = 'row col-lg-12 col-md-12 col-sm-12';
 logoWrapper.className = 'col-lg-2 logo col-sm-12';
 logoWrapper.innerHTML =
-  '<img class="ml-2 p-2" src="img/logo.png"> <span class="text-white">My Blog</span>';
+  '<img id="logo" class="ml-2 p-2" src="img/logo.png"> <span class="text-white">My Blog</span>';
 upMenuWrapper.className = 'col-lg-4 ml-auto col-sm-12 upmenu';
 rowMenuWrapper.className = 'row menu';
 menuLi.className = 'dropdown';
