@@ -185,7 +185,9 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   color: purple;
 }
 .postarea h5:hover {
-  color: red;
+  color: tomato;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .postarea a img:hover {
   -webkit-transform: scale(1.03);
@@ -195,13 +197,29 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  position: relative;
 }
 .postarea .textpro > i {
   font-size: 13px;
+  transition: 0.3s;
+}
+.postarea .textpro > i:hover {
+  cursor: pointer;
 }
 .textpro p {
   max-height: 120px;
   overflow: hidden;
+  color: rgb(129, 129, 129);
+  line-height: 21px;
+  font-size: 14px;
+}
+.textpro .badge-danger {
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  bottom: 45%;
+  right: 6%;
+  color: white;
 }
 
 .card-body i {
@@ -295,6 +313,12 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   .postarea .textpro > i {
     font-size: 12px;
   }
+  .textpro .badge-danger {
+    font-size: 12px;
+    line-height: 12px;
+    bottom: 37%;
+    right: 6%;
+  }
   .upmenu {
     margin-top: 20px;
   }
@@ -325,6 +349,12 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
 
   .cattext {
     display: none;
+  }
+  .textpro .badge-danger {
+    font-size: 12px;
+    line-height: 12px;
+    bottom: 48%;
+    right: 6%;
   }
   .newposts,
   .mostreadposts {
@@ -358,6 +388,12 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   .cattext {
     display: none;
   }
+  .textpro .badge-danger {
+    font-size: 12px;
+    line-height: 12px;
+    bottom: 37%;
+    right: 6%;
+  }
   .newposts,
   .mostreadposts {
     margin: 0px auto;
@@ -379,7 +415,12 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
     margin-left: 0px;
     padding: 0px;
   }
-
+  .textpro .badge-danger {
+    font-size: 12px;
+    line-height: 12px;
+    bottom: 50%;
+    right: 6%;
+  }
   .cattext > h6 a {
     font-size: 13px;
   }
