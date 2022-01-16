@@ -10,6 +10,8 @@ const posts = [
     writerId: 'w--1',
     writerAvatar: 'img/energy.png',
     writerName: 'AliD.',
+    viewed: 14,
+    liked: 10,
   },
   {
     id: 'p--2',
@@ -26,6 +28,8 @@ const posts = [
     writerId: 'w--2',
     writerAvatar: 'img/post4.jpg',
     writerName: 'Rob.',
+    viewed: 2,
+    liked: 0,
   },
   {
     id: 'p--3',
@@ -42,6 +46,8 @@ const posts = [
     writerId: 'w--3',
     writerAvatar: 'img/post3.jpg',
     writerName: 'Wouter',
+    viewed: 6,
+    liked: 1,
   },
   {
     id: 'p--4',
@@ -58,6 +64,8 @@ const posts = [
     writerId: 'w--1',
     writerAvatar: 'img/css.jpg',
     writerName: 'Ali D.',
+    viewed: 8,
+    liked: 3,
   },
   {
     id: 'p--5',
@@ -74,6 +82,8 @@ const posts = [
     writerId: 'w--5',
     writerAvatar: 'img/js.jpg',
     writerName: ' Eric',
+    viewed: 14,
+    liked: 2,
   },
 ];
 export default posts;

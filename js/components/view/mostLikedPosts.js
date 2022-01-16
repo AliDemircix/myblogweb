@@ -27,7 +27,9 @@ posts.forEach((post, i) => {
       post.writerAvatar
     }"> <b class="text-danger">${
       post.writerName
-    }</b>  <i class=" ml-4 far fa-heart text-danger"> 25</i> <i class="far fa-eye text-muted"> 45</i> </div> </div>`;
+    }</b>  <i class=" ml-4 far fa-heart text-danger"> ${
+      post.liked
+    }</i> <i class="far fa-eye text-muted"> ${post.viewed}</i> </div> </div>`;
   }
 });
 likedPostsWrapper.appendChild(newPostsCard);

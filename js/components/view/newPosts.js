@@ -18,7 +18,9 @@ const reversedPosts = [...posts];
 reversedPosts.reverse();
 reversedPosts.forEach((post, i) => {
   if (i < 4) {
-    newPostsCard.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-6 col-12 postarea px-1"><a href=""><img class="img-fluid img-fix "src="${
+    newPostsCard.innerHTML += `<div id="${
+      post.id
+    }" class="col-lg-3 col-md-6 col-sm-6 col-12 postarea px-1"><a href=""><img class="img-fluid img-fix "src="${
       post.img
     }"></a> <div class="bg-white textpro  p-2"> <h5>${
       post.title
@@ -26,8 +28,11 @@ reversedPosts.forEach((post, i) => {
       post.writerAvatar
     }"> <b class="text-danger">${
       post.writerName
-    }</b>  <i class=" ml-4 far fa-heart text-danger"> 25</i> <i class="far fa-eye text-muted"> 45</i> </div> </div>`;
+    }</b>  <i class=" ml-4 far fa-heart text-danger"> ${
+      post.liked
+    }</i> <i class="far fa-eye text-muted"> ${post.viewed}</i> </div> </div>`;
   }
 });
 newPostsWrapper.appendChild(newPostsCard);
+
 export { newPostsWrapper };
