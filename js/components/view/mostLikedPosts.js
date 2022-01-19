@@ -15,15 +15,15 @@ const newPostsCard = document.createElement('div');
 
 // Add filtered posts with liked amounts.
 newPostsCard.className =
-  'row col-md-12 col-sm-12 col-lg-12 mt-3 mb-3 text-justify mx-0 px-0';
+  'row col-md-12 col-sm-12 col-lg-12 mt-3 mb-3 mx-0 px-0';
 
 posts.forEach((post, i) => {
   if (i < 4) {
     newPostsCard.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-6 col-12 postarea px-1"><a href=""><img class="img-fluid img-fix "src="${
       post.img
-    }"></a> <div class="bg-white textpro  p-2"> <h5>${
-      post.title
-    }</h5> <p>${post.content.slice(0, 200)}</p> <img src="${
+    }"></a> <div class="bg-white textpro  p-2"> <h5>${post.title}</h5> 
+    <p class="badge badge-danger">${post.category}</p>
+    <p>${post.content.slice(0, 200)}</p> <img src="${
       post.writerAvatar
     }"> <b class="text-danger">${
       post.writerName

@@ -4,6 +4,7 @@ const posts = [
     title: 'HTML5 Crash Course',
     content: `HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard`,
     img: 'img/html.png',
+    category: 'html',
     isFeatured: true,
     isPinned: false,
     isNews: false,
@@ -22,6 +23,7 @@ const posts = [
   Nemo fugit iure fuga, quas esse error? Animi eveniet harum, qui repellat ratione provident obcaecati neque possimus? Dolores sequi nisi voluptates facilis maiores itaque neque nostrum consectetur, consequatur velit nobis.
   Iure eveniet unde, dignissimos consectetur atque a quibusdam possimus sed nobis iusto, suscipit, ducimus autem sit? Recusandae assumenda tempore odit asperiores! Maiores perferendis iusto, quas optio ut dolorem ipsa maxime?`,
     img: 'img/rapidcss.jpg',
+    category: 'css',
     isFeatured: false,
     isPinned: true,
     isNews: true,
@@ -40,6 +42,7 @@ const posts = [
   Nemo fugit iure fuga, quas esse error? Animi eveniet harum, qui repellat ratione provident obcaecati neque possimus? Dolores sequi nisi voluptates facilis maiores itaque neque nostrum consectetur, consequatur velit nobis.
   Iure eveniet unde, dignissimos consectetur atque a quibusdam possimus sed nobis iusto, suscipit, ducimus autem sit? Recusandae assumenda tempore odit asperiores! Maiores perferendis iusto, quas optio ut dolorem ipsa maxime?`,
     img: 'img/rapidjs.jpg',
+    category: 'javascript',
     isFeatured: false,
     isPinned: true,
     isNews: true,
@@ -60,6 +63,7 @@ const posts = [
     img: 'img/rapidreact.jpg',
     isFeatured: false,
     isPinned: false,
+    category: 'react',
     isNews: true,
     writerId: 'w--1',
     writerAvatar: 'img/css.jpg',
@@ -76,6 +80,7 @@ const posts = [
   Nemo fugit iure fuga, quas esse error? Animi eveniet harum, qui repellat ratione provident obcaecati neque possimus? Dolores sequi nisi voluptates facilis maiores itaque neque nostrum consectetur, consequatur velit nobis.
   Iure eveniet unde, dignissimos consectetur atque a quibusdam possimus sed nobis iusto, suscipit, ducimus autem sit? Recusandae assumenda tempore odit asperiores! Maiores perferendis iusto, quas optio ut dolorem ipsa maxime?`,
     img: 'img/wp.jpg',
+    category: 'html',
     isFeatured: false,
     isPinned: false,
     isNews: true,
