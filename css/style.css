@@ -10,8 +10,7 @@ body {
   background-color: #f3f3f3;
 }
 
-.header,
-.footer {
+.header {
   height: 120px;
 }
 .header {
@@ -22,6 +21,10 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
 .footer {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.footer p {
+  font-size: 11px;
+  margin-bottom: 0px;
 }
 
 .logo > img {
