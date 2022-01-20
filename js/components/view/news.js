@@ -18,10 +18,9 @@ news.forEach((hbr) => {
 <div class="card border-0 my-1">
 <div class="row">
 <img class="card-img-left col-6 col-lg-5" src="${hbr.img}" alt="${hbr.title}">
-<div class="col-md-6 col-6">
-<div class="card-block">
+<div class="col-md-6 col-6 mt-3">
+<div class="card-block ">
   <h5 class="card-title mt-2 green"><a href="#">${hbr.title}</a></h5>
-  <p class="card-text">${hbr.content.slice(0, 30)}...</p>
   <i style="color:#567EB5;" class="fa fa-facebook"></i> <span style="font-size: 12px;">1.1b</span>
   <i style="color:green;" class="fa fa-whatsapp"></i> <span style="font-size: 12px;">975</span>
   <span class="text-muted" style="font-size: 12px;">12 Jan 2020</span>
