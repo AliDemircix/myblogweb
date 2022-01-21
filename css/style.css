@@ -80,7 +80,8 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   width: 120px;
   margin: 1px 1px;
 }
-.header > .row .menu li a {
+.header > .row .menu li a,
+.row .menu li {
   text-decoration: none;
   color: white;
   text-transform: capitalize;
@@ -88,7 +89,13 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
 .header .menu > li .dropdown-menu > a {
   text-transform: uppercase;
 }
-
+#search {
+  cursor: pointer;
+}
+#searchBox {
+  height: 20px;
+  display: none;
+}
 .cattext {
   text-align: center !important;
   margin: auto 0px;

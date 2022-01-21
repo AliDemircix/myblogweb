@@ -1,4 +1,5 @@
 import categories from '../data/categories.js';
+
 const headerWrapper = document.createElement('div');
 const headerWrapperRow = document.createElement('div');
 const logoWrapper = document.createElement('div');
@@ -25,11 +26,11 @@ headerWrapperRow.appendChild(logoWrapper);
 headerWrapperRow.appendChild(upMenuWrapper);
 upMenuWrapper.appendChild(rowMenuWrapper);
 rowMenuWrapper.appendChild(menuLi);
-rowMenuWrapper.innerHTML += `<li><a href="#"><i class="fa fa-search mr-1"></i>Search </a></li>
+rowMenuWrapper.innerHTML += `<li id="search"><i class="fa fa-search mr-1"></i>Search </li>
         <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sign mr-1"></i>Register/Login </a>
           <div class="dropdown-menu"> <input class="dropdown-item form-control " type="text" placeholder="E-Mail Adress" name=""> <input class="dropdown-item form-control" type="text" placeholder="Password" name=""> <a class="btn btn-success btn-sm ml-2" href="">Login</a><a class="btn btn-danger btn-sm ml-2" href="">Register</a></div>
-
-        </li>`;
+          
+        </li><input type="text" class="form-control col-lg-12" id="searchBox"  placeholder="Search Something...">`;
 // menuLi.appendChild(menuA);
 
 headerWrapper.appendChild(headerWrapperRow);
