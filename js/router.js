@@ -39,7 +39,7 @@ const router = () => {
 
     // redirect to the router instance
     const routeInfo = appRoutes.filter((r) => r.path === route)[0];
-
+    console.log(route);
     if (!routeInfo) {
       window.history.pushState({}, '', '#error');
       // define content of fallback path
