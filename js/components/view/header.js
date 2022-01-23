@@ -9,8 +9,7 @@ const menuLi = document.createElement('li');
 headerWrapper.className = 'container header shadow-sm tomato-progress';
 headerWrapperRow.className = 'row col-lg-12 col-md-12 col-sm-12';
 logoWrapper.className = 'col-lg-2 logo col-sm-12';
-logoWrapper.innerHTML =
-  '<img id="logo" class="ml-2 p-2" src="img/logo.png"> <span class="text-white">My Blog</span>';
+logoWrapper.innerHTML = `<img id="logo" class="ml-2 p-2" src="img/logo.png"> <span class="text-white" router-link="/">My Blog</span>`;
 upMenuWrapper.className = 'col-lg-4 ml-auto col-sm-12 upmenu';
 rowMenuWrapper.className = 'row menu';
 menuLi.className = 'dropdown';
@@ -39,7 +38,7 @@ rowCatWrapper.className = 'col-lg-12 row categorybg';
 const rowCatText = document.createElement('div');
 rowCatText.className = 'col-lg-9 row cattext mt-2 ml-2';
 categories.forEach((category) => {
-  rowCatText.innerHTML += `<h6 class="p-2 text-dark "><a href="${category.url}">${category.title}</a></h6>`;
+  rowCatText.innerHTML += `<h6 class="p-2 text-dark "><span class="categoryUrl" router-link="/${category.url}">${category.title}</span></h6>`;
 });
 rowCatWrapper.appendChild(rowCatText);
 headerWrapper.appendChild(rowCatWrapper);

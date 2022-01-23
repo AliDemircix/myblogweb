@@ -5,6 +5,7 @@ const likeCheck = () => {
     like.addEventListener('click', (e) => {
       if (e.target.classList.contains('liked')) {
         e.target.innerText = parseInt(e.target.innerText) - 1;
+        console.log(e.target.innerText);
         e.target.style.fontWeight = 'lighter';
         e.target.classList.remove('liked');
       } else {
