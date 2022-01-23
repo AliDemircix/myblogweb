@@ -20,7 +20,7 @@ const router = () => {
       name: [headerWrapper, filteredCssPosts, footer],
     },
     {
-      path: '',
+      path: 'myblogweb',
       name: [
         headerWrapper,
         topContainerWrapper,
