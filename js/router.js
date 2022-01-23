@@ -55,7 +55,7 @@ const router = () => {
   }
 
   function main() {
-    navigate('myblogweb');
+    navigate('/myblogweb');
     console.log(window.location.pathname);
     const routes = Array.from(document.querySelectorAll('[router-link]'));
 
