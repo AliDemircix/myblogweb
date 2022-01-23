@@ -26,7 +26,9 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   font-size: 11px;
   margin-bottom: 0px;
 }
-
+.logo {
+  cursor: pointer;
+}
 .logo > img {
   height: 70px;
 }
@@ -94,7 +96,9 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
 }
 #searchBox {
   height: 20px;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 .cattext {
   text-align: center !important;
@@ -106,11 +110,11 @@ background: linear-gradient(180deg, rgba(81,158,158,1) 0%, rgba(81,204,204,1) 50
   margin-left: -4px;
   text-transform: capitalize;
 }
-.header .cattext > h6 a {
-  text-decoration: none;
+.header .cattext > h6 span {
+  cursor: pointer;
   color: black;
 }
-.header .cattext > h6 a:hover {
+.header .cattext > h6 span:hover {
   color: tomato;
   -webkit-transition: all 0.3s ease-in-out;
 }

@@ -1,23 +1,23 @@
-import posts from '../data/posts.js';
-const likedPostsWrapper = document.createElement('div');
-likedPostsWrapper.className = 'container mostreadposts';
+import posts from '../../data/posts.js';
+const filteredHtmlPosts = document.createElement('div');
+filteredHtmlPosts.className = 'container mostreadposts';
 const newPostsCategoryTitle = document.createElement('div');
 newPostsCategoryTitle.className =
   'mt-3 text-left col-md-12 col-sm-12 col-lg-12';
-newPostsCategoryTitle.innerHTML = `<h4>Most Liked Posts</h4>`;
+newPostsCategoryTitle.innerHTML = `<h4>Html Category Posts</h4>`;
 const tomatoProgressive = document.createElement('div');
 tomatoProgressive.className = 'progress tomato-progress my-2';
 tomatoProgressive.style.height = '3px';
 tomatoProgressive.innerHTML = ` <div class="progress-bar bg-warning" role="progressbar" style="width: 20%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>`;
-likedPostsWrapper.appendChild(newPostsCategoryTitle);
-likedPostsWrapper.appendChild(tomatoProgressive);
+filteredHtmlPosts.appendChild(newPostsCategoryTitle);
+filteredHtmlPosts.appendChild(tomatoProgressive);
 const newPostsCard = document.createElement('div');
 
 // Add filtered posts with liked amounts.
 newPostsCard.className =
   'row col-md-12 col-sm-12 col-lg-12 mt-3 mb-3 mx-0 px-0';
-
-posts.forEach((post, i) => {
+const filteredPosts = posts.filter((post) => post.category === 'html');
+filteredPosts.forEach((post, i) => {
   if (i < 4) {
     newPostsCard.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-6 col-12 postarea px-1"><a href=""><img class="img-fluid img-fix "src="${
       post.img
@@ -34,5 +34,5 @@ posts.forEach((post, i) => {
     }</i> <i class="far fa-eye text-muted"> ${post.viewed}</i> </div> </div>`;
   }
 });
-likedPostsWrapper.appendChild(newPostsCard);
-export { likedPostsWrapper };
+filteredHtmlPosts.appendChild(newPostsCard);
+export { filteredHtmlPosts };
