@@ -20,7 +20,7 @@ const router = () => {
       name: [headerWrapper, filteredCssPosts, footer],
     },
     {
-      path: './',
+      path: '',
       name: [
         headerWrapper,
         topContainerWrapper,
@@ -55,7 +55,7 @@ const router = () => {
   }
 
   function main() {
-    navigate(window.location.pathname);
+    navigate('myblogweb');
     console.log(window.location.pathname);
     const routes = Array.from(document.querySelectorAll('[router-link]'));
 
