@@ -20,7 +20,7 @@ const router = () => {
       name: [headerWrapper, filteredCssPosts, footer],
     },
     {
-      path: '/',
+      path: '/myblogweb',
       name: [
         headerWrapper,
         topContainerWrapper,
@@ -39,7 +39,7 @@ const router = () => {
 
     // redirect to the router instance
     const routeInfo = appRoutes.filter((r) => r.path === route)[0];
-
+    console.log(route);
     if (!routeInfo) {
       window.history.pushState({}, '', '#error');
       // define content of fallback path
@@ -55,7 +55,8 @@ const router = () => {
   }
 
   function main() {
-    navigate(window.location.pathname);
+    navigate('/myblogweb');
+    console.log(window.location.pathname);
     const routes = Array.from(document.querySelectorAll('[router-link]'));
 
     routes.forEach((route) => {
