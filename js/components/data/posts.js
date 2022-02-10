@@ -90,5 +90,24 @@ const posts = [
     viewed: 14,
     liked: 2,
   },
+  {
+    id: 'p--6',
+    title: 'Learn API Tutorial',
+    content: `Labore lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente sint architecto tempore dolor fuga cupiditate delectus eveniet ducimus sequi fugit dolore optio et nesciunt earum quos, consequuntur ex soluta.
+  Quaerat necessitatibus distinctio ex architecto inventore temporibus cupiditate. Labore quidem dolorem similique blanditiis ipsum, sequi ut quaerat minus illo impedit? Molestiae ex neque pariatur omnis sequi fugiat quas officia soluta?
+  Blanditiis iste dolores ullam tenetur quisquam consectetur a repudiandae odio eligendi minus explicabo, est impedit nesciunt fugiat iure, dolore, aspernatur molestiae commodi? Itaque molestiae provident sapiente eaque explicabo maiores architecto!
+  Nemo fugit iure fuga, quas esse error? Animi eveniet harum, qui repellat ratione provident obcaecati neque possimus? Dolores sequi nisi voluptates facilis maiores itaque neque nostrum consectetur, consequatur velit nobis.
+  Iure eveniet unde, dignissimos consectetur atque a quibusdam possimus sed nobis iusto, suscipit, ducimus autem sit? Recusandae assumenda tempore odit asperiores! Maiores perferendis iusto, quas optio ut dolorem ipsa maxime?`,
+    img: 'img/wp.jpg',
+    category: 'api',
+    isFeatured: false,
+    isPinned: false,
+    isNews: false,
+    writerId: 'w--5',
+    writerAvatar: 'img/js.jpg',
+    writerName: ' Stephan',
+    viewed: 1,
+    liked: 0,
+  },
 ];
 export default posts;

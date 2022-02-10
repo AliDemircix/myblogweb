@@ -8,6 +8,8 @@ import likeCheck from './components/helper/likeCheck.js';
 import searchHandler from './components/helper/searchHandler.js';
 import { filteredHtmlPosts } from './components/view/catView/html.js';
 import { filteredCssPosts } from './components/view/catView/css.js';
+import { filteredJavaScriptPosts } from './components/view/catView/javaScript.js';
+import { filteredApiPosts } from './components/view/catView/api.js';
 const router = () => {
   const container = document.querySelector('.mobile');
   const appRoutes = [
@@ -18,6 +20,14 @@ const router = () => {
     {
       path: '/css',
       name: [headerWrapper, filteredCssPosts, footer],
+    },
+    {
+      path: '/javascript',
+      name: [headerWrapper, filteredJavaScriptPosts, footer],
+    },
+    {
+      path: '/api',
+      name: [headerWrapper, filteredApiPosts, footer],
     },
     {
       path: '/myblogweb',
